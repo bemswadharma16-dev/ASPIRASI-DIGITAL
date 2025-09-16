@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspirasi Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <!-- Chart.js harus diload dulu -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Baru script kamu -->
+  <script src="script.js"></script>
+</body>
+</html>
+<script src="script.js"></script>
+
+<body>
+  <body>
+  
+
+  <!-- Beranda -->
+  <div id="beranda" class="page">
+    <h1>Selamat Datang 👋</h1>
+    <p>Ini adalah beranda Aspirasi Digital 24/7.</p>
+  </div>
+
+  <!-- Tentang -->
+  <div id="tentang" class="page" style="display:none;">
+    <h1>Tentang</h1>
+    <p>Platform ini dibuat untuk menampung aspirasi mahasiswa dengan cara mudah, cepat, dan transparan ✨</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">✨ Aspirasi Mahasiswa</div>
+    <nav>
+      <a href="index.html">Beranda</a>
+             </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <h1>Suaramu, Perubahan Kita</h1>
+  <p>Sampaikan aspirasi, ide, dan inspirasimu kapan saja 🌙☀️</p>
+  
+  <div class="hero-buttons">
+    <button onclick="openForm()">✍️ Ajukan Aspirasi</button>
+    <button onclick="lihatAspirasi()">📖 Lihat Aspirasi</button>
+    <button onclick="lihatStatistik()">📊 Statistik Aspirasi</button>
+
+<div id="aspirasiList"></div>
+      </div>
+</section>
+
+<!-- Placeholder untuk konten interaktif -->
+<section id="dynamic-content"></section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</body>
+</html>
+
+<!-- Tombol -->
+<button id="lihatAspirasiBtn" class="btn">📊 Lihat Aspirasi</button>
+
+<!-- Modal Password -->
+<div id="passwordModal" class="modal">
+  <div class="modal-content">
+    <h2>🔑 Masukkan Password</h2>
+    <input type="password" id="passwordInput" placeholder="Ketik password...">
+    <div class="modal-actions">
+      <button id="submitPassword">Masuk</button>
+      <button id="cancelPassword">Batal</button>
+    </div>
+    <p class="note">(Hanya untuk admin/monitoring)</p>
+  </div>
+</div>
+
+<!-- Section Beranda -->
+<section id="beranda" class="page">
+  <h2>Selamat Datang di Aspirasi Digital 🎉</h2>
+  <p>Ini adalah halaman utama berisi informasi singkat dan sambutan.</p>
+</section>
+
+
+
+
+
+<nav>
+  <button id="nav-beranda">Beranda</button>
+  <button id="lihat-aspirasi">Lihat Aspirasi</button>
+  <button id="hubungi-admin">Hubungi Admin</button>
+</nav>
+
+<!-- Halaman: Tentang -->
+<div id="tentang" class="page" style="display:none; text-align:center;">
+  <h2>✨ Tentang Aspirasi Digital 24/7 ✨</h2>
+  <p style="font-size: 1.1em; line-height: 1.6; margin: 20px auto; max-width: 600px;">
+    Hai teman-teman 👋💕  
+    <br><br>
+    Aspirasi Digital 24/7 hadir sebagai ruang seru 🎉 buat kalian semua mahasiswa untuk 
+    menyampaikan <b>ide, uneg-uneg, maupun saran</b> kapan saja ⏰ tanpa harus nunggu ketemu langsung.
+    <br><br>
+    Tujuannya? Supaya suara kalian 🎤 bisa lebih cepat didengar, lebih mudah ditindaklanjuti, 
+    dan pastinya bikin kampus kita makin <b>asik, nyaman, dan maju bareng-bareng</b> 🚀✨
+    <br><br>
+    Jadi jangan ragu, yuk salurkan aspirasimu sekarang juga 🌟💌
+  </p>
+  <div style="margin-top:20px;">
+    <button onclick="showPage('aspirasi')" style="padding:10px 20px; border:none; border-radius:20px; background:#ff7eb9; color:white; font-weight:bold; cursor:pointer; transition:0.3s;">
+      📝 Ajukan Aspirasi
+    </button>
+  </div>
+</div>

@@ -1,0 +1,421 @@
+/* Warna Elegan */
+:root {
+  --primary: #2e1a47;  /* Ungu Gelap */
+  --secondary: #1a1f36; /* Biru Navy */
+  --accent: #d4af37;   /* Emas */
+  --text: #f5f5f5;
+  --gray: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+header {
+  background: var(--secondary);
+  color: var(--text);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--text);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--text);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--gray);
+}
+
+.hero button {
+  background: var(--accent);
+  color: var(--primary);
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #b38f2a;
+}
+
+/* Main Content */
+main {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fff;
+  color: #333;
+}
+
+main h2 {
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+/* Footer */
+footer {
+  background: var(--secondary);
+  color: var(--gray);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.hero-buttons button {
+  background: var(--accent);
+  color: var(--primary);
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-buttons button:hover {
+  background: #b38f2a;
+  transform: scale(1.05);
+}
+
+/* FORM ASPIRASI */
+#aspirasiForm {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: popIn 0.6s ease;
+}
+
+#aspirasiForm label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+#aspirasiForm input,
+#aspirasiForm select,
+#aspirasiForm textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#aspirasiForm input:focus,
+#aspirasiForm select:focus,
+#aspirasiForm textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+#aspirasiForm button {
+  background: var(--accent);
+  color: var(--primary);
+  border: none;
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: auto;
+}
+
+#aspirasiForm button:hover {
+  background: #b38f2a;
+  transform: scale(1.05);
+}
+
+/* Animasi */
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Modal password */
+.password-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.password-box {
+  background: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+.gemes-box {
+  border: 3px dashed #ff99cc;
+}
+
+/* Input gemes */
+.input-gemes {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 2px solid #ffd6e7;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.input-gemes:focus {
+  border-color: #ff66a3;
+  box-shadow: 0 0 6px rgba(255,102,163,0.4);
+}
+
+/* Button gemes */
+.btn-gemes {
+  background: linear-gradient(135deg,#ff66a3,#ff99cc);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-gemes:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg,#ff4d94,#ff80b3);
+}
+
+.btn-cancel {
+  background: #eee;
+  color: #444;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Form gemes */
+.form-gemes {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 2px dashed #ffe6f2;
+}
+
+/* Notif gemes */
+.notif-gemes {
+  text-align: center;
+  margin-top: 40px;
+  background: #fff0f6;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Animasi shake */
+@keyframes shakeAnim {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+.password-box.shake {
+  animation: shakeAnim 0.6s ease;
+}
+
+/* Animasi fadeIn */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9);}
+  to { opacity: 1; transform: scale(1);}
+}
+
+/* Card aspirasi */
+.aspirasi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.aspirasi-card {
+  background: #fff0f6;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+.aspirasi-card:hover {
+  transform: scale(1.02);
+  background: #ffe6f2;
+}
+.aspirasi-card h4 {
+  margin-bottom: 8px;
+  color: #ff4da6;
+}
+/* Tombol */
+.btn {
+  padding: 10px 20px;
+  background: #ffcb05;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #ffb703;
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: popUp 0.3s ease;
+}
+.modal-actions button {
+  margin: 10px 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal-actions button:first-child {
+  background: #4CAF50;
+  color: white;
+}
+.modal-actions button:last-child {
+  background: #f44336;
+  color: white;
+}
+.note {
+  font-size: 12px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Animasi */
+@keyframes popUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.error {
+  border: 2px solid red;
+  animation: shake 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+.page {
+  padding: 20px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page h2 {
+  color: #ff4fa2;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-bottom: 10px;
+}
+
+.page p {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+}
+
+.page button:hover {
+  background: #ff4fa2;
+  transform: scale(1.05);
+}
+
